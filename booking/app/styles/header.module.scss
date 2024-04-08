@@ -1,0 +1,14 @@
+@import 'variables';
+
+.layout {
+  width: 100%;
+  min-height: 64px;
+  height: auto;
+  padding: 20px;
+  background: url("../../public/stars.png") $blue_dark;
+
+  & .title {
+    color: $blue_light;
+    text-shadow: $blue 1px 0 10px;
+  }
+}

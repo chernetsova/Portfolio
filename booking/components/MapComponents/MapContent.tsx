@@ -1,0 +1,21 @@
+'use client';
+import { MapContainer } from 'react-leaflet';
+import { useMapParams } from "@/pages/bookingPage";
+import map from '@/app/styles/map.module.scss';
+import MapLayout from './MapLayout';
+import { IMap } from "@/types"; 
+
+export default function MapContent() {
+  let { coords, zoom }: IMap = useMapParams();
+
+  return(
+    <MapContainer 
+      className={map.layout}
+      center={coords} 
+      zoom={zoom} 
+      scrollWheelZoom={true}
+    >
+      <MapLayout />
+    </MapContainer>
+  )
+}

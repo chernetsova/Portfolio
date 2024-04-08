@@ -1,0 +1,53 @@
+@import 'variables';
+
+.layout_blue_dark {
+  background: $blue_dark;
+}
+
+.color_yellow {
+  color: $yellow
+}
+
+.mt_20 {
+  margin-top: 20px;
+}
+
+.ml_20 {
+  margin-left: 20px;
+}
+
+.p_20 {
+  padding: 20px
+}
+
+.no_display {
+  display: none;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.w_300 {
+  width: 300px;
+}
+
+.w_500 {
+  width: 500px;
+}
+
+.w_800 {
+  width: 800px;
+}
+
+.w_100 {
+  width: 100%;
+}
+
+.border_bottom_gray {
+  border-bottom: 1px solid $gray;
+}
