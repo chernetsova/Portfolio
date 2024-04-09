@@ -3,11 +3,16 @@ import HotelLayout from "@/components/HotelLayout";
 import { TSlug, IParams } from "@/types";
 
 export async function generateStaticParams() {
-  const info = await fetch(`${process.env.API_HOST}/hotels/`).then((res) => res.json());
+  try {
+    const info = await fetch(`${process.env.API_HOST}/hotels/`).then((res) => res.json());
 
-  return info.map((item: TSlug) => ({
-    slug: item.slug,
-  }))
+    return info.map((item: TSlug) => ({
+      slug: item.slug,
+    }))
+
+  } catch {
+    return null
+  }
 }
 
 export default function Page({ params }: IParams<{slug: string}>) {
