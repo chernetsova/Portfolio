@@ -1,11 +1,11 @@
 'use client';
 import React from 'react';
 import { useState, useEffect } from 'react';
-import createCollectionsIndexedDB, { idb } from "@/pages/api/connectDB";
+import createCollectionsIndexedDB, { idb } from "@/app/api/connectDB";
 import { Layout, Typography, ConfigProvider, Dropdown, Badge, Flex, Button, Space, Row, Col } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 import { Pages, FormData, ArrayType } from "@/types";
-import { useUrlSegment } from '@/pages/api/urlSegment';
+import { useUrlSegment } from '@/app/api/urlSegment';
 import global from '@/app/styles/global.module.scss';
 import header from '@/app/styles/header.module.scss';
 

@@ -6,7 +6,7 @@ import "leaflet/dist/leaflet.css";
 import { getHotels } from "@/app/actions";
 import { alertShow } from "@/redux/feature/alert-slice";
 import { AppDispatch } from '@/redux/store';
-import { useUrlSegment } from '@/pages/api/urlSegment';
+import { useUrlSegment } from '@/app/api/urlSegment';
 import BreadcrumbLayout from '@/components/BreadcrumbLayout';
 import { Layout, Row, Col, Select, Space, Spin } from 'antd';
 import global from '@/app/styles/global.module.scss';

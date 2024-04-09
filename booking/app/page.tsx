@@ -1,4 +1,4 @@
-import HomePage from "@/pages/homePage"
+import HomePage from "@/components/HomePage"
 
 export default function Home() {
   return (

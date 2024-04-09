@@ -1,4 +1,4 @@
-import BookingPage from "@/pages/bookingPage";
+import BookingPage from "@/components/BookingPage";
 import {getCountries} from "@/app/actions"
 import { Suspense } from "react";
 import Loading from "@/app/loading";

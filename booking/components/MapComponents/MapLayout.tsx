@@ -1,13 +1,13 @@
 'use client';
 import global from '@/app/styles/global.module.scss';
-import { useMapParams } from "@/pages/bookingPage";
+import { useMapParams } from "@/components/BookingPage";
 import { TileLayer, Marker, Popup, useMap, LayerGroup } from 'react-leaflet';
 import { alertShow } from "@/redux/feature/alert-slice";
 import { useDispatch } from 'react-redux';
 import { Layout, Divider, Typography, Button, DatePicker, Form, type FormProps, Input, Flex } from 'antd';
 import icon from "leaflet/dist/images/marker-icon.png";
 import { Icon } from 'leaflet';
-import { idb } from "@/pages/api/connectDB";
+import { idb } from "@/app/api/connectDB";
 import { AppDispatch } from '@/redux/store';
 import { FormData, IMap, IHotel } from "@/types";
 

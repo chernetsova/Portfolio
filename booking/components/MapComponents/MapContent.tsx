@@ -1,6 +1,6 @@
 'use client';
 import { MapContainer } from 'react-leaflet';
-import { useMapParams } from "@/pages/bookingPage";
+import { useMapParams } from "@/components/BookingPage";
 import map from '@/app/styles/map.module.scss';
 import MapLayout from './MapLayout';
 import { IMap } from "@/types"; 
