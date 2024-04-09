@@ -9,7 +9,7 @@ Web-интерфейс с клиент-серверной архитектуро
  После успешной отправки данных на сервер, список забронированных отелей отображается в контейнере "Лист ожидания".  
 
  **Инструменты**  
- Next.js, React, Redux, Typescript, Leaflet, Ant Design, Scss.  
+ Next.js, React, Redux Toolkit, Typescript, API, Leaflet, Ant Design, Scss.  
 
  **Команды запуска**  
 ```bash
