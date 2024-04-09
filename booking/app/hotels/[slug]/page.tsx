@@ -15,7 +15,7 @@ export async function generateStaticParams() {
   }
 }
 
-export default function Page({ params }: IParams<{slug: string}>) {
+export default function Page(params: IParams<string>) {
   const { slug } = params;
   return(
     <>
