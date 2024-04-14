@@ -7,7 +7,7 @@ import { useDispatch } from 'react-redux';
 import { Layout, Divider, Typography, Button, DatePicker, Form, type FormProps, Input, Flex } from 'antd';
 import icon from "leaflet/dist/images/marker-icon.png";
 import { Icon } from 'leaflet';
-import { idb } from "@/app/api/connectDB";
+import { idb } from "@/pages/api/connectDB";
 import { AppDispatch } from '@/redux/store';
 import { FormData, IMap, IHotel } from "@/types";
 

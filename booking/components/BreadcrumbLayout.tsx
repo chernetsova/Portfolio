@@ -3,7 +3,7 @@ import { Breadcrumb, ConfigProvider, Layout } from 'antd';
 import { HomeOutlined } from '@ant-design/icons';
 import { route } from "@/route";
 import breadcrumb from '@/app/styles/breadcrumb.module.scss';
-import { usePathContext } from '@/app/api/path';
+import { usePathContext } from '@/pages/api/path';
 import { TSlug } from "@/types";
 
 export default function BreadcrumbLayout(props: TSlug) {

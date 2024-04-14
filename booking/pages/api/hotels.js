@@ -1,4 +1,4 @@
-import { hotels } from "@/app/api/data/hotels"
+import { hotels } from "@/pages/api/data/hotels"
 
 export default function handler(req, res) {
   const {query: {name}, method} = req;

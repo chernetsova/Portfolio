@@ -1,6 +1,7 @@
 import BreadcrumbLayout from "@/components/BreadcrumbLayout";
 import HotelLayout from "@/components/HotelLayout";
-import { TSlug, IParams } from "@/types";
+import { TSlug } from "@/types";
+import { hotels } from "@/pages/api/data/hotels"
 
 export async function generateStaticParams() {
   try {
@@ -11,11 +12,15 @@ export async function generateStaticParams() {
     }))
 
   } catch {
-    return null
+    return hotels.map((item) => {
+      slug: item.page
+    })
   }
 }
 
-export default function Page(params: IParams<string>) {
+export default function Page(
+  { params, searchParams }: { params: { slug: string }, searchParams: { [key: string]: string | string[] | undefined }
+}) {
   const { slug } = params;
   return(
     <>

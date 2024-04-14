@@ -1,8 +1,8 @@
 import dynamic from 'next/dynamic';
 import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
-import { UrlSegmentProvider } from '@/app/api/urlSegment';
-import { PathNameProvider } from '@/app/api/path';
+import { UrlSegmentProvider } from '@/pages/api/urlSegment';
+import { PathNameProvider } from '@/pages/api/path';
 import { ReduxProvider } from '@/redux/provider';
 import { Suspense } from 'react';
 import Loading from '@/app/loading';
