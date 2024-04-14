@@ -10,6 +10,7 @@ import { route } from "@/route";
 import { Layout, Flex, Card, Rate, Row, Col, Button, ConfigProvider, Spin } from 'antd';
 import { ArrowRightOutlined } from '@ant-design/icons';
 import global from '@/app/styles/global.module.scss';
+import home from "@/app/styles/home.module.scss";
 import ambos from "@/public/images/hotels/ambos.jpg";
 import lausanne from "@/public/images/hotels/lausanne.jpg";
 import negresco from "@/public/images/hotels/negresco.jpg";
@@ -54,9 +55,15 @@ export default function HomePage() {
  
 
   return(
-    <Layout className={global.layout_blue_dark}>
+    <Layout className={`${global.layout_blue_dark} ${home.cards_layout}`}>
       <Spin spinning={loading}>
-      <Flex justify="center" align="center" wrap="wrap" gap="small">
+      <Flex 
+        justify="center" 
+        align="center" 
+        wrap="wrap" 
+        gap="small" 
+        className={home.cards_layout}
+      >
           {
             isInfo &&
             info.map((hotel: IInfo) => {

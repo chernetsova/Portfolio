@@ -3,7 +3,7 @@
 .layout {
   width: 100%;
   min-height: 64px;
-  height: auto;
+  height: $header_height;
   padding: 20px;
   background: url("../../public/stars.png") $blue_dark;
 

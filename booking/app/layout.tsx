@@ -1,6 +1,7 @@
 import dynamic from 'next/dynamic';
 import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
+import "@/app/styles/globals.css";
 import { UrlSegmentProvider } from '@/pages/api/urlSegment';
 import { PathNameProvider } from '@/pages/api/path';
 import { ReduxProvider } from '@/redux/provider';

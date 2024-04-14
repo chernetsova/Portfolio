@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Layout, Card, Space, Flex, Spin} from 'antd';
 import global from '@/app/styles/global.module.scss';
+import hotel from '@/app/styles/hotel.module.scss';
 import { getInfoHotel } from '@/app/actions';
 import { alertShow } from "@/redux/feature/alert-slice";
 import { AppDispatch } from '@/redux/store';
@@ -12,8 +13,6 @@ import ambos from "@/public/images/hotels/ambos.jpg";
 import lausanne from "@/public/images/hotels/lausanne.jpg";
 import negresco from "@/public/images/hotels/negresco.jpg";
 import { TPage, IInfo } from "@/types";
-
-const { Content } = Layout;
 
 export default function HotelLayout(props: {page: TPage}) {
   const {page} = props;
@@ -52,15 +51,14 @@ export default function HotelLayout(props: {page: TPage}) {
   })
 
   return (
-    <Layout className={global.layout_blue_dark}>
-      <Content>
-      </Content>
+    <Layout className={`${global.layout_blue_dark}`}>
+      <Spin spinning={loading}>
       <Flex justify="center" align="center">
-        <Spin spinning={loading}>
+        
           {
             isInfo &&
             <Card 
-              className={global.w_500}
+              className={hotel.card}
               title={info.label} 
               extra={<Link href={`/booking`}>Забронировать</Link>}
               cover={
@@ -76,8 +74,9 @@ export default function HotelLayout(props: {page: TPage}) {
               </Space>
             </Card>
           }
-        </Spin>
+        
       </Flex>
+      </Spin>
     </Layout>
   )
 }

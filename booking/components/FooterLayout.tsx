@@ -1,13 +1,13 @@
 'use client';
 import { Layout, Flex } from 'antd';
-import global from '@/app/styles/global.module.scss';
+import footer from '@/app/styles/footer.module.scss';
 
 const { Footer } = Layout;
 
 export default function FooterLayout() {
   return (
     <Layout>
-      <Footer className={`${global.layout_blue_dark} ${global.color_yellow}`}>
+      <Footer className={`${footer.layout}`}>
         <Flex justify="flex-end">
           <div>&copy;&nbsp;Чернецова Ольга</div>
         </Flex>
