@@ -1,0 +1,23 @@
+### О проекте.  
+Landing Page для контекстной рекламы.  
+
+![Просмотр страницы](imgs/preview.jpeg)  
+
+**Описание функционала**  
+Промо-страница для рекламы линейки автомобилей Land Rover.  
+Контент страницы формируется взависимости от utm-метки, которая содержит информацию о марке автомобиля.  
+```javascript
+// Контент линейки автомобилей Range Rover  
+`${url}`/?utm_campaign="r_r"  
+// Контент линейки автомобилей Range Rover Sport    
+`${url}`/?utm_campaign="rrs"  
+// Контент линейки автомобилей Range Rover Evoque    
+`${url}`/?utm_campaign="rre"  
+// Контент линейки автомобилей Discovery Sport    
+`${url}`/?utm_campaign="ds"  
+// Контент линейки автомобилей Discovery    
+`${url}`/?utm_campaign="d5"
+```       
+
+**Инструменты**  
+Php, jQuery, Html, Css. 

@@ -1,0 +1,100 @@
+.icon-color{
+    width: 18px;
+    height: 18px;
+}
+
+/*** A ***/
+
+.Aintree-Green{
+    background: linear-gradient(to top, #0b1b1a, #203733);
+}
+.Aruba{
+   background: linear-gradient(to top, #484744, #84837f); 
+}
+
+/*** B ***/
+
+.Barolo-Black{
+    background: linear-gradient(to top, #262626, #8b8891);
+}
+.Byron-Blue{
+    background: linear-gradient(to top, #424553, #6a7084);
+}
+
+/*** C ***/
+
+.Carpathian-Gray{
+    background: linear-gradient(to top, #323639, #8b9191);
+}
+.Corris-Grey{
+    background: linear-gradient(to top, #545257, #797a7f);
+}
+
+/*** F ***/
+
+.Faralon-Black{
+    background: linear-gradient(to top, #141e2a, #343841);
+}
+.Fuji-White{
+    background: linear-gradient(to top, #b5b9bc, #f3f3f3);
+}
+.Firenze-Red{
+   background: linear-gradient(to top, #3f060e, #7c1d27); 
+}
+
+/*** I ***/
+
+.Indus-Silver{
+  background: linear-gradient(to top, #7c808a, #d4d9e8);   
+}
+
+/*** K ***/
+
+.Kaikoura-Stone{
+    background: linear-gradient(to top, #46413d, #adaea9);
+}
+
+/*** L ***/
+
+.Loire-Blue{
+    background: linear-gradient(to top, #18222e, #5d77aa);
+}
+
+/*** M ***/
+
+.Montalcino-Red{
+    background: linear-gradient(to top, #4a040b, #76000e);
+}
+
+/*** N ***/
+
+.Namib-Orange{
+    background: linear-gradient(to top, #7a361d, #b95131);
+}
+.Narvik-Black{
+   background: linear-gradient(to top, #0d0b0d, #36323b); 
+}
+
+/*** R ***/
+
+.Ruffina-Red{
+    background: linear-gradient(to top, #0f0a0d, #2f252a);
+}
+
+/*** S ***/
+
+.Santorini-Black{
+    background: linear-gradient(to top, #090a0c, #616767);
+}
+.Scotia-Grey{
+    background: linear-gradient(to top, #454e4f, #6e7d80);
+}
+.Silicon-Silver{
+    background: linear-gradient(to top, #565553, #818181);
+}
+
+/*** Y ***/
+
+.Yulong-White{
+    background: linear-gradient(to top, #a5a7b4, #ccd0db);
+}

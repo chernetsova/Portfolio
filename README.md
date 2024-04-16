@@ -1,13 +1,14 @@
 ### Портфолио  
-1. Бронирование отеля ([Ссылка](https://github.com/chernetsova/Portfolio/tree/main/booking)).  
+1. Бронирование отеля ([Ссылка](./booking/)).  
 > Next.js, React, Redux, Typescript, Leaflet, Ant Design, Scss.  
-2. Чат ([Ссылка](https://github.com/chernetsova/Portfolio/tree/main/Chat)).  
+2. Чат ([Ссылка](./Chat/)).  
 > Vue, Nuxt, Express, Vue-Socket, Vuetify.  
-3. Excel ([Ссылка](https://github.com/chernetsova/Portfolio/tree/main/Excel)).  
+3. Excel ([Ссылка](./Excel/)).  
 > Javascript, Scss, Webpack, Babel.  
-4. Видеоплейер ([Ссылка](https://github.com/chernetsova/Portfolio/tree/main/Video)).  
+4. Видеоплейер ([Ссылка](./Video/)).  
 > React, Redux, Redux Saga, Typescript, Jest, HTML5 api video.
 5. Игра "Пятнашки" ([Ссылка](./Fifteen/))
 > Vue.js, Webpack, CSS.
 6. Игра "Красная Шапочка и Серый Волк" ([Ссылка](./Walker/))
-> Javascript, CSS, HTML.
+> Javascript, CSS, HTML.  
+7. Landing Page Land Rover ([Ссылка](./PromoArteks/))

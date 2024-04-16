@@ -1,0 +1,948 @@
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+    color: #4a4f54;
+    padding: 0;
+    margin: 0;
+}
+
+.wrap{
+    width: 100%;
+    max-width: 1260px;
+    background: #fffefe;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container{
+    max-width: 1190px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.text-bold{
+    font-family: 'Land Rover Bold';
+}
+
+.text-upp{
+    text-transform: uppercase;
+}
+
+.title{
+    font-size: 36px;
+}
+
+.text-demi{
+    font-family: 'AvenirNextCyr-Demi';
+    color: #0c121c;
+}
+
+button{
+    border: 0;
+    cursor: pointer;
+}
+
+.h1{
+    display: inline-block;
+    font-size: 48px;
+    border-top: 4px solid #0c121c;
+    border-bottom: 4px solid #0c121c;
+}
+
+.price-select{
+    font-family: 'AvenirNextCyr-Demi';
+    color: #a4a7a9;
+}
+
+.price-lg{
+    font-family: 'AvenirNextCyr-Demi';
+    font-size: 40px;
+    color: #0c121c;
+}
+
+.fixed{
+    position: fixed !important;
+    left: 0;
+}
+
+.img-responsive{
+    max-width: 100%;
+}
+
+.btn{
+    display: inline-block;
+    font-family: 'AvenirNextCyr-Demi';
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding: 15px 20px;
+}
+
+.bg-black{
+    background: #0c121c;
+    color: #ffffff;
+}
+
+.bg-white{
+    background: #ffffff;
+    color: #0c121c;
+}
+
+.bg-black:hover{
+    background: #ffffff;
+    color: #000000;
+}
+
+.bg-white:hover{
+    background: #000000;
+    color: #ffffff;
+}
+
+.btn.bg-black:hover .icon-percent{
+    background: url('../imgs/sprites.png') no-repeat -123px -10px;
+	width: 15px;
+	height: 15px;
+}
+
+.btn .icon{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.block{
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    float: left;
+}
+
+.phone-error:before{
+    content: 'Номер введен некорректно';
+    padding: 10px 0;
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #ed1f26;
+    color: #ed1f26;
+    font-weight: 500;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    z-index: 6;
+    font-size: 15px;
+    text-align: center;
+}
+
+.required{
+    border: 1px solid #e2001a !important;
+}
+
+.nav{
+    background: #fffffd;
+    z-index: 999;
+}
+
+.navbar, .navbar-logo, .navbar-btn, .block-navbar-btn, .stock-wrap, .advantage-numb, .writein-wrap, .balloon-wrap, .balloon-info-wrap, .navbar-btn li{
+    display: flex;
+    align-items: center;
+}
+
+.navbar, .navbar-logo, .advantage-numb, .disksman-wrap{
+    justify-content: space-between;
+}
+
+.navbar{
+    width: 100%;
+    height: 80px;
+}
+
+.navbar-logo{
+    width: 230px;
+}
+
+.logo-text{
+    font-family: 'Land Rover Medium';
+    font-size: 24px;
+}
+
+.block-navbar-btn{
+    width: 630px;
+    height: 100%;
+}
+
+.navbar-btn, .intro-profits, .intro-service{
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-btn{
+    height: 100%;
+}
+
+.navbar-call{
+    color: #0c121c;
+    font-size: 18px;
+    letter-spacing: normal;
+}
+
+.navbar-btn li{
+    width: 215px;
+    height: 80px;
+    justify-content: center;
+    border-right: 2px solid #e3e6e6;
+    letter-spacing: 2px;
+    font-size: 10px;
+}
+
+.navbar-btn li:last-child{
+    border-right: 0;
+}
+
+.navbar-btn li:hover{
+    background: rgba(205, 209, 211, 0.7);
+    cursor: pointer;
+}
+
+.navbar-btn .icon-phone, .navbar-btn .icon-chat{
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+.block-intro{
+    margin-top: 80px;
+}
+
+.block-intro-text{
+    position: absolute;
+    z-index: 1;
+    top: 150px;
+    left: 45px;
+}
+
+.intro-text-wrap{
+    display: inline-block;
+    width: 470px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.intro-text{
+    width: 400px;
+    margin: 40px auto;
+}
+
+.intro-title{
+    font-size: 48px;
+    margin-bottom: 25px;
+    line-height: 1;
+}
+
+.intro-profits{
+    font-family: 'AvenirNextCyr-Medium';
+    font-size: 18px;
+    color: #4a4f54;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.block-service-list{
+    text-align: left;
+}
+
+.btn-next{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    background: rgba(36, 41, 50, 0.9);
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.btn-next:hover{
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.btn-next:hover .icon-arrow-down{
+    background: url('../imgs/sprites.png') no-repeat -185px -7px;
+}
+
+.block-stock{
+    background: #e9ecec;
+}
+
+.block-stock-title{
+    text-align: center;
+}
+
+.block-stock-title .h1{
+    margin: 45px auto;
+}
+
+.block-stock{
+    background: #e9ecec;
+}
+
+.block-service-package .h1{
+    margin: 45px auto;
+}
+
+.block-service-package{
+    text-align: center;
+}
+
+.intro-service li{
+    position: relative;
+    padding-left: 15px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.intro-service .icon{
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+.stock-wrap{
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.stock-item{
+    width: 297px;
+    background: #fdfeff;
+    margin: 40px 12px;
+    text-align: center;
+}
+
+.stock-item:hover{
+    box-shadow:0 0 2px  #0c121c; transition:.3s;
+}
+
+.stock-img{
+    margin-bottom: 20px;
+}
+
+.stock-title{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.stock-info{
+    margin-bottom: 25px;
+}
+
+.block-stock-info-list{
+    width: 265px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #626262;
+}
+
+.stock-info-list{
+    width: 100%;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.block-stock .title, .block-btn-cost{
+    text-align: center;
+}
+
+.block-btn-cost{
+    margin: 20px auto;
+}
+
+.offer-wrap{
+    display: flex;
+}
+
+.offer-info{
+   width: 359px;
+}
+
+.offer-img{
+    width: 831px;
+}
+
+.offer-img img{
+    vertical-align: bottom;
+}
+
+.offer-catchword{
+    display: inline-block;
+    font-size: 18px;
+    color: #a4a7a9;
+    border-top: 2px solid #a4a7a9;
+    border-bottom: 2px solid #a4a7a9;
+    margin-top: 75px;
+    margin-bottom: 55px;
+    padding: 5px 0;
+}
+
+.offer-title{
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.offer-text{
+    max-width: 280px;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+.btn.bg-black:hover .icon-sum{
+    background: url('../imgs/sprites.png') no-repeat -48px -8px;
+}
+
+.block-advantage{
+    background: #4a4f54;
+    text-align: center;
+    color: #e4e8e8;
+}
+
+.block-advantage .h1{
+    border-top: 4px solid #ffffff;
+    border-bottom: 4px solid #ffffff;
+    color: #ffffff;
+    margin-top: 55px;
+    margin-bottom: 60px;
+}
+
+.advantage-wrap{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    text-align: left;
+    margin-bottom: 70px;
+}
+
+.advantage-title{
+    width: 475px;
+    font-family: 'AvenirNextCyr-Medium';
+    font-size: 36px;
+}
+
+.advantage-text{
+    width: 440px;
+    line-height: 1.5;
+}
+
+.advantage-numb{
+    width: 840px;
+    margin: 0 auto 40px auto;
+}
+
+.advantage-item{
+    width: 250px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.advantage-item .numb{
+    color: #ffffff;
+    font-size: 60px;
+}
+
+.numb-title{
+    border-top: 2px solid #e4e8e8;
+    border-bottom: 2px solid #e4e8e8;
+    font-family: 'AvenirNextCyr-Medium';
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.btn.bg-white:hover .icon-phone{
+    background: url('../imgs/sprites.png') no-repeat -30px -34px;
+}
+
+.block-advantage .btn{
+    margin-bottom: 55px;
+}
+
+.writein-wrap{
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+
+.block-writein{
+    background: #e9ecec;
+    text-align: center;
+}
+
+.block-writein .h1{
+    margin: 60px auto;
+}
+
+.writein-info{
+    width: 465px;
+    color: #4a4f54;
+    text-align: left;
+}
+
+.writein-title{
+    font-family: 'AvenirNextCyr-Medium';
+    font-size: 36px;
+    margin-bottom: 25px;
+    line-height: 1;
+}
+
+.writein-text{
+    line-height: 1.5;
+}
+.writein-form{
+    width: 490px;
+}
+
+.btn.bg-black:hover .icon-drive{
+    background: url('../imgs/sprites.png') no-repeat -150px -32px;
+}
+
+.map{
+    width: 100%;
+    height: 420px;
+}
+
+.block-balloon{
+    position: absolute;
+    top: 20px;
+    left: 45px;
+    z-index: 1;
+}
+
+.balloon-wrap{
+    width: 410px;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.balloon-title{
+    font-size: 48px;
+    color: #0c121c;
+    line-height: 1;
+}
+
+.balloon-info{
+    width: 160px;
+    color: #4a4f54;
+}
+
+.btn.bg-black .icon-phone{
+    background: url('../imgs/sprites.png') no-repeat -30px -34px;
+}
+
+.btn.bg-black:hover .icon-phone{
+    background: url('../imgs/sprites.png') no-repeat -8px -34px;
+}
+
+.balloon-container{
+    margin: 20px;
+}
+
+.disksman-wrap{
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    margin: 45px auto;
+}
+
+.disksman-wrap div:nth-child(1){
+    width: 90%;
+    text-align: justify;
+}
+
+.disksman-wrap div:nth-child(2){
+    width: 10%;
+    text-align: right;
+}
+
+.disksman-dealer{
+    margin-right: 25px;
+}
+
+.btn-top{
+    display: none;
+    width: 125px;
+    height: 45px;
+    background: #e4e8e8;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: inherit;
+    right: 60px;
+    cursor: pointer;
+
+    font-family: 'AvenirNextCyr-Demi';
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #898c8f;
+}
+
+.btn-top .icon{
+    margin-right: 15px;
+}
+
+.btn-top:hover{
+    color: #000000;
+}
+
+.modal{
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(12, 18, 28, 0.7);
+    z-index: 999;
+}
+
+.modal-form-wrap{
+    width: 400px;
+    background: #e9ecec;
+    position: relative;
+}
+
+.modal-form{
+    width: 270px;
+    margin: 30px auto;
+}
+
+.modal .title, .modal .title-info, .form-btn{
+    text-align: center;
+}
+
+.modal .title{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.modal .title-info{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.modal .form-field{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.modal .field{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #e9ecec;
+    background: #ffffff;
+    padding-left: 15px;
+}
+
+.modal textarea.field{
+    height: 100px;
+}
+
+.modal .field-title{
+    margin-bottom: 10px;
+}
+
+.btn-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#message .title-info{
+    margin: 20px auto;
+}
+
+.modal .btn .icon-chat{
+    background: url('../imgs/sprites.png') no-repeat -204px -7px;
+}
+
+.modal .btn:hover .icon-chat{
+    background: url('../imgs/sprites.png') no-repeat -113px -33px;
+}
+
+@media screen and (max-width: 1200px){
+
+    .wrap{
+        max-width: 100%;
+    }
+
+    .container{
+        max-width: 992px;
+    }
+
+    .block-intro-text{
+        top: 50px;
+    }
+
+    .h1{
+        font-size: 45px;
+    }
+
+    .title{
+        font-size: 30px;
+    }
+
+    .offer-img{
+        width: 633px;
+    }
+
+    .offer-catchword{
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+
+    .offer-wrap{
+        align-items: center;
+    }
+
+    .offer-text{
+        margin-bottom: 30px;
+    }
+
+    .offer-info .btn{
+        margin-bottom: 20px;
+    }
+
+    .btn-top{
+        top: 80%;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 992px){
+
+    .container{
+        max-width: 768px;
+    }
+
+    .navbar-btn .icon-phone, .navbar-btn .icon-chat{
+        margin-left: 5px;
+    }
+
+    .navbar-logo{
+        width: 200px;
+    }
+
+    .block-navbar-btn{
+        width: 530px;
+    }
+
+    .h1{
+        font-size: 35px;
+    }
+
+    .block-intro-text{
+        top: 10px;
+        left: 10px;
+    }
+
+    .offer-img{
+        width: 409px;
+    }
+
+    .advantage-title, .advantage-text{
+        width: 45%;
+    }
+
+    .advantage-title{
+        font-size: 25px;
+    }
+
+    .advantage-numb{
+        width: 100%;
+    }
+
+    .disksman-wrap div:nth-child(1){
+        width: 85%;
+    }
+
+    .disksman-wrap div:nth-child(2){
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    
+   .container{
+        max-width: 320px;
+    } 
+    
+    .hidden-xs{
+        display: none !important;
+    }
+    
+    .modal-form-wrap, .writein-info, .intro-text-wrap, .offer-info, .offer-img, .advantage-item, .balloon-wrap, .intro-text{
+        width: 100%;
+    }
+    
+    .navbar-logo{
+        width: 160px;
+    }
+    
+    .block-navbar-btn{
+        width: 100px;
+    }
+    
+    .navbar-btn li{
+        width: 50px;
+    }
+    
+    .block-intro-text{
+        position: relative;
+    }
+    
+    .navbar-btn li{
+        border-left: 2px solid #e3e6e6;
+        border-right: 0;
+    }
+    
+    .logo-text{
+        font-size: 20px;
+    }
+    
+    .logo-xs{
+        width: 65px;
+    }
+    
+    .block-intro-text, .block-balloon{
+        top: inherit;
+        left: inherit;
+        z-index: inherit;
+    }
+    
+    .intro-title{
+        font-size: 35px;
+    }
+    
+    .h1{
+        font-size: 30px;
+        border: 0;
+    }
+    
+    .stock-item{
+        margin: 10px 12px;
+    }
+    
+    .title{
+        font-size: 25px;
+    }
+    
+    .offer-wrap{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    
+    .offer-catchword{
+        font-size: 15px;
+        border: 0;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    
+    .block-advantage .h1{
+        margin-top: 30px;
+        margin-bottom: 50px;
+        border: 0;
+        text-align: left;
+    }
+    
+    .advantage-numb{
+        flex-wrap: wrap;
+    }
+    
+    .advantage-item{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid #a4a7a9;
+    }
+    
+    .advantage-numb .advantage-item:last-child{
+        border-bottom: none;
+    }
+    
+    .advantage-item .numb{
+        font-size: 40px;
+        color: #a4a7a9;
+    }
+    
+    .numb-title{
+        font-size: 15px;
+        border: 0;
+        width: 205px;
+    }
+    
+    .block-writein .h1{
+        margin: 28px auto 20px auto;
+        text-align: left;
+    }
+    
+    .writein-wrap{
+        flex-wrap: wrap;
+    }
+    
+    .writein-title{
+        font-size: 20px;
+    }
+    
+    .writein-form{
+        margin-top: 30px;
+    }
+    
+    .block-balloon{
+        position: relative;
+    }
+    
+    .balloon-title{
+        font-size: 30px;
+    }
+    
+    .disksman-wrap{
+        flex-wrap: wrap;
+    }
+    
+    .disksman-wrap div{
+        width: 100% !important;
+    }
+    
+    .disksman-dealer{
+        margin-right: 0;
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    .disksman-wrap div:nth-child(2){
+        text-align: left;
+    }
+    
+    .map{
+        height: 180px;
+    }
+    
+}
+
+@media screen and (max-width: 400px){
+    
+   .container{
+        max-width: 300px;
+    } 
+}
