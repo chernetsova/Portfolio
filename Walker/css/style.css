@@ -1,0 +1,39 @@
+#field-game td{
+    width: 100px;
+    height: 100px;
+    background: url("../img/field.png") no-repeat top center;
+}
+
+.title, .block-counts{
+    text-align: center;
+}
+
+#field-game, .block-counts{
+    margin: auto;
+}
+
+.block-counts{
+    width: 60%;
+}
+
+.block-game__item{
+    display: inline-block;
+    float: left;
+}
+
+.block-game .block-game__item:nth-child(1){
+    width: 80%;
+}
+
+.block-game .block-game__item:nth-child(2){
+    padding: 100px 0;
+    width: 20%;
+}
+
+.list-key{
+    list-style-type: none;
+}
+
+.list-key li{
+    margin-bottom: 10px;
+}
