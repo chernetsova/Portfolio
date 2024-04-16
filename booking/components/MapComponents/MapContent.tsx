@@ -14,6 +14,7 @@ export default function MapContent() {
       center={coords} 
       zoom={zoom} 
       scrollWheelZoom={true}
+      attributionControl = {false}
     >
       <MapLayout />
     </MapContainer>

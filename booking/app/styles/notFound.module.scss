@@ -1,0 +1,7 @@
+@import 'variables';
+
+.layout {
+  width: 100%;
+  min-height: calc(100vh - $header_height - $footer_height - 100px);
+  background-color: $blue_dark;
+}
