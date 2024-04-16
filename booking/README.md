@@ -9,9 +9,11 @@ Web-интерфейс с клиент-серверной архитектуро
  На странице Бронирования отображается карта. После выбора страны в поле автопоиска, карта прокручивается к местоположению страны с отметками местонахождения отелей.  
  После нажатия на отметку, открывается форма бронирования для ввода необходимых данных.  
  После успешной отправки данных на сервер, список забронированных отелей отображается в контейнере "Лист ожидания".  
+ Интерфейс развернут на платформе Vercel ([смотреть](https://booking-seven-kappa.vercel.app/)).  
 
  **Инструменты**  
  Next.js, React, Redux Toolkit, Typescript, API Created, Leaflet, Ant Design, IndexedDB, Scss.  
+ Rest API: [REST Countries](https://restcountries.com/), [Travelpayouts](https://support.travelpayouts.com/hc/en-us/articles/115000343268-Hotels-data-API).  
 
  **Команды запуска**  
 ```bash
