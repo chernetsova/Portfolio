@@ -7,8 +7,11 @@
 > Javascript, Scss, Webpack, Babel.  
 4. Видеоплейер ([Ссылка](./Video/)).  
 > React, Redux, Redux Saga, Typescript, Jest, HTML5 api video.
-5. Игра "Пятнашки" ([Ссылка](./Fifteen/))
+5. Игра "Пятнашки" ([Ссылка](./Fifteen/)).
 > Vue.js, Webpack, CSS.
-6. Игра "Красная Шапочка и Серый Волк" ([Ссылка](./Walker/))
+6. Игра "Красная Шапочка и Серый Волк" ([Ссылка](./Walker/)).
 > Javascript, CSS, HTML.  
-7. Landing Page Land Rover ([Ссылка](./PromoArteks/))
+7. Landing Page Land Rover ([Ссылка](./PromoArteks/)).
+> Php, jQuery, Html, Css.  
+8. Landing Page медицинской клиники Парацельс (([Ссылка](./PromoParacels/))).  
+> Php, jQuery, Bootstrap, Html, Css.
