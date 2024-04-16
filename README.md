@@ -13,5 +13,5 @@
 > Javascript, CSS, HTML.  
 7. Landing Page Land Rover ([Ссылка](./PromoArteks/)).
 > Php, jQuery, Html, Css.  
-8. Landing Page медицинской клиники Парацельс (([Ссылка](./PromoParacels/))).  
+8. Landing Page медицинской клиники Парацельс ([Ссылка](./PromoParacels/)).  
 > Php, jQuery, Bootstrap, Html, Css.
