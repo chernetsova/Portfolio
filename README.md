@@ -7,3 +7,7 @@
 > Javascript, Scss, Webpack, Babel.  
 4. Видеоплейер ([Ссылка](https://github.com/chernetsova/Portfolio/tree/main/Video)).  
 > React, Redux, Redux Saga, Typescript, Jest, HTML5 api video.
+5. Игра "Пятнашки" ([Ссылка](./Fifteen/))
+> Vue.js, Webpack, CSS.
+6. Игра "Красная Шапочка и Серый Волк" ([Ссылка](./Walker/))
+> Javascript, CSS, HTML.
