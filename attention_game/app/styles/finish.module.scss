@@ -1,0 +1,41 @@
+@import 'variables';
+
+.winBackground {
+  background: url("../../public/images/iskra.gif");
+  background-repeat: repeat;
+}
+
+.btn {
+  max-width: 300px;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.btnViolet {
+  background: $violet;
+  color: $violet_light;
+}
+
+.btnVioletLight {
+  background: $violet_light;
+  border: 1px solid $violet;
+  color: $violet;
+}
+
+.failBackground {
+  background: linear-gradient(#ffffff, $red);
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+}
