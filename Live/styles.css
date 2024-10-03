@@ -1,0 +1,213 @@
+*{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  color: #101116;
+  position: relative;
+}
+
+a, a:hover{
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  width: 100%;
+  background: #C8D2D1;
+  margin-bottom: 20px;
+}
+
+header .container-main {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* -------- Button Rules ------------ */
+
+.btn-rules {
+  display: inline-block;
+  color: #02315E;
+  padding: 5px 0;
+  cursor: pointer;
+  border-bottom: 1px dashed #02315E;
+}
+
+.btn-rules:hover {
+  color: rgba(2, 49, 94, 0.7);
+}
+
+/* .btn-rules input[type=checkbox] {
+  z-index: -1;
+  opacity: 0;
+  display: block;
+  width: 0;
+  height: 0;
+}
+
+.btn-rules input[type=checkbox]:checked + span {
+  color: red
+} */
+
+/* ---------------------------- */
+
+#panel {
+  margin-bottom: 50px;
+}
+
+#panel .container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+}
+
+#panel .container .item {
+  margin-right: 15px;
+}
+
+#panel .container .item .title {
+  color: #02315E;
+}
+
+#panel .container .item .button-run, #alert .button-run {
+  display: inline-block;
+  color: #FFFFFF;
+  background: #02315E;
+  border: 1px solid #02315E;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+#panel .container .item .button-run:hover, #alert .button-run:hover {
+  background: rgba(2, 49, 94, 0.7)
+}
+
+.field-number {
+  width: 70px;
+  border: 1px solid #02315E;
+  border-radius: 2px;
+}
+
+#game .container {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+}
+
+.tor {
+  display: inline-block;
+  border: 2px solid #FFBB02;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.tor:after {
+  display: inline-block;
+  content: "";
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  border: 2px solid #FFBB02;
+  background: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) skew(40deg, 10deg);
+} 
+
+#field {
+  border-collapse: collapse;
+  border-radius: 50%;
+  margin: auto;
+  position: relative;
+}
+
+#field td {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #FFBB02;
+  cursor: pointer;
+}
+
+#field td.full {
+  background: #27AFC9;
+}
+
+.tabs {
+  text-align: center;
+}
+
+.tab input[type=radio] {
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+  }
+
+  .tab {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .tab span {
+    display: inline-block;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #02315E;
+    border-radius: 2px;
+  }
+  
+  .tab input[type=radio]:checked + span {
+    background: #02315E;
+    color: #FFFFFF;
+  }
+
+  input[disabled=true], button[disabled=true]{
+    background: #C8D2D1 !important;
+  }
+
+  button[disabled=true]:hover {
+    background: #C8D2D1 !important;
+  }
+
+  #alert {
+    width: 300px;
+    height: 150px;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    right: 50%;
+    background:#27AFC9;
+    border: 1px solid #FFBB02;
+    box-shadow: 0 0 80px #FFBB02;
+  }
+
+  .button-alert {
+    margin-top: 20px;
+  }
+
+  .no-display {
+    display: none;
+  }
+
+  #time {
+    margin-bottom: 20px;
+  }

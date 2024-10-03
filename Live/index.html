@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=1024, initial-scale=1">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Игра Жизнь</title>
+  </head>
+  <body>
+    <header>
+      <div class="container-main">
+        <h1>Игра "Жизнь"</h1>
+        <div>
+          <a href="https://w.wiki/84xj" target="_blank" class="btn-rules">Описание</a>
+        </div>
+      </div>
+      <div class="tabs">
+        <label class="tab" for="btn-manual">
+          <input type="radio" name="mode" id="btn-manual" value="manual" checked />
+          <span>Ручной</span>
+        </label>
+        <label class="tab" for="btn-random">
+          <input type="radio" name="mode" id="btn-random" value="random" />
+          <span>Случайный</span>
+        </label>
+      </div>
+    </header>
+    <section id="panel">
+      <div class="container">
+        <div class="item">
+          <span class="title">Количество строк:</span>  
+          <input type="number" id="qRows" class="field-number" value="0" />
+        </div>
+        <div class="item">
+          <span class="title">Количество столбцов:</span> 
+          <input type="number" id="qCols" class="field-number" value="0" />
+        </div>
+        <div class="item">
+          <button type="button" id="bSet" class="button-run">Построить</button>
+        </div>
+        <div class="item">
+          <button type="button" id="bPlay" class="button-run">Играть</button>
+        </div>
+      </div>
+    </section>
+    <section id="game">
+      <div class="container">
+        <div id="loader" class="no-display"></div>
+        <div id="time" class="no-display">
+          Время: 1000 мс
+        </div>
+        <div id="frame">
+          <table id="field"></table>
+        </div>
+      </div>
+    </section>
+    <div id="alert" class="no-display">
+      Игра окончена
+      <div class="button-alert">
+        <button type="button" id="bUpdate" class="button-run">Обновить</button>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script type="module">
+  import { createTable, createPoint, playPoints, countPoints, showAlert, resetTable } from "./index.js";
+
+
+  const qRows = document.getElementById("qRows");
+  const qCols = document.getElementById("qCols");
+  const f = document.getElementById("field");
+  const bSet = document.getElementById("bSet");
+  const bPlay = document.getElementById("bPlay");
+  const bManual = document.getElementById("btn-manual");
+  const bRandom = document.getElementById("btn-random");
+  const bUpdate = document.getElementById("bUpdate");
+  const frame = document.getElementById("frame");
+  const time = document.getElementById("time");
+
+ 
+
+  const updateDisabledInput = (field, flag) => field.disabled = flag;
+  const updateDisabledButton = (button, flag) => {
+    if ( flag === true ) {
+      button.setAttribute("disabled", flag);
+    } else {
+      button.removeAttribute('disabled');
+    }
+  }
+  const setValue = (field, value) => field.value = value;
+  const setCkecked = (field, value) => field.checked = value;
+
+  const onRun = () => {
+
+    updateDisabledInput(qRows, true);
+    updateDisabledInput(qCols, true);
+    updateDisabledButton(bSet, true);
+   
+      createTable({
+      rows: qRows.value,
+      cols: qCols.value,
+      container: f,
+      frame: frame
+    });
+
+  }
+
+  const onCell = (event) => {
+    const { target } = event;
+    createPoint({
+      x: target.dataset.x,
+      y: target.dataset.y
+    })
+  }
+
+  const randomCreatePoints = () => {
+    let totalCells = (qRows.value - 1) * (qCols.value - 1);
+    let total = Math.floor(Math.random() * totalCells);
+    
+    for ( let t = 0; t < total; t++) {
+      let randomRow = Math.floor(Math.random() * (f.rows.length - 1));
+      let randomCell = Math.floor(Math.random() * (f.rows[randomRow].cells.length - 1));
+
+      createPoint({
+        x: `${randomRow}`,
+        y: `${randomCell}`,
+      })
+    }
+
+  }
+
+  const playCell = () => {
+    let isRandom = bRandom.checked;
+    updateDisabledButton(bPlay, true);
+    updateDisabledInput(bManual, true);
+    updateDisabledInput(bRandom, true);
+    document.getElementById("time").classList.remove("no-display");
+
+    if ( isRandom ) {
+      randomCreatePoints();
+      playPoints(f);
+      
+    } else {
+      playPoints(f);
+    }
+    
+  }
+
+  const closeAlert = () => {
+    showAlert(false);
+    updateDisabledButton(bPlay, false);
+    updateDisabledInput(bManual, false);
+    updateDisabledInput(bRandom, false);
+    updateDisabledInput(qRows, false);
+    updateDisabledInput(qCols, false);
+    updateDisabledButton(bSet, false);
+    resetTable();
+    setValue(qRows, 0);
+    setValue(qCols, 0);
+    setCkecked(bManual, true);
+    setCkecked(bRandom, false);
+    time.classList.add("no-display");
+  }
+
+  bSet.addEventListener("click", onRun, false);
+  f.addEventListener("click", onCell, false);
+  bPlay.addEventListener("click", playCell, false);
+  bUpdate.addEventListener("click", closeAlert, false);
+
+</script>
