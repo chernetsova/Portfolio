@@ -14,4 +14,6 @@
 7. Landing Page Land Rover ([Ссылка](./PromoArteks/)).
 > Php, jQuery, Html, Css.  
 8. Landing Page медицинской клиники Парацельс ([Ссылка](./PromoParacels/)).  
-> Php, jQuery, Bootstrap, Html, Css.
+> Php, jQuery, Bootstrap, Html, Css.  
+9. Игра "Жизнь" ([Ссылка](./Live/)).  
+> Javascript, CSS, HTML. 
