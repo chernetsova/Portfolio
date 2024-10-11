@@ -93,8 +93,6 @@
         </v-col>
       </v-row>
     </v-container>
-  </div>
-  <div>
   <v-dialog
     v-model="dialog"
     transition="dialog-bottom-transition"
@@ -282,6 +280,9 @@ export default {
     const updateDetailFilter = (flag) => detailFilter.value = flag;
 
     const runFilter = async () => {
+
+      updateDetailFilter(false);
+
       if ( !isFilterMore.value ) {
         let id = numberOrder.value;
         let detailOrderResponse = await getDetailingOrder(id);
