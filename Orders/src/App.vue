@@ -282,7 +282,7 @@ export default {
     const updateDetailFilter = (flag) => detailFilter.value = flag;
 
     const runFilter = async () => {
-      if ( isFilterMore.value ) {
+      if ( !isFilterMore.value ) {
         let id = numberOrder.value;
         let detailOrderResponse = await getDetailingOrder(id);
 
